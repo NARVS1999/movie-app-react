@@ -31,7 +31,7 @@ function Detail() {
           </div>
         ) : (
           <div className="container-fluid">
-            <Link to="/"><button className="btn btn-primary bi bi-arrow-bar-left" id={styles.btn}>   Back</button></Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}><button className="btn btn-primary bi bi-arrow-bar-left" id={styles.btn}>   Back</button></Link>
             <h1>Details</h1>
             <img src={movie.large_cover_image} alt={movie.title} />
             <p><strong>Year: </strong>{movie.year}</p>
